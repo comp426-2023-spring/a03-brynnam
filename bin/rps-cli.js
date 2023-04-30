@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {rps, help, rules} from "../lib/rpsls.js"
+import {rps, help, rules} from "./lib/rpsls.js"
 import minimist from "minimist";
 const args = minimist(process.argv.slice(2),{
     alias: {
@@ -24,7 +24,7 @@ switch(true) {
             console.log(JSON.stringify(result));
             process.exit();
         }
-        
+
         //play the game
         playerChoice = playerChoice.toLowerCase;
         const result = rps(playerChoice);
