@@ -26,7 +26,7 @@ switch(true) {
         
         //play the game
         playerChoice = playerChoice.toLowerCase;
-        const result = rps(playerChoice);
+        const result = rpsls(playerChoice);
 
         //edge case: make sure result defined
         if (!(typeof result == "undefined")) {
